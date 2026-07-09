@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Funnel Is Full. The Pipeline Is Empty. | ETG Field Notes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #0e1a2b;
+      --navy-mid: #162236;
+      --navy-light: #1e3048;
+      --gold: #c9a84c;
+      --gold-light: #e8c97a;
+      --cream: #f4f1ea;
+      --text-light: #a8b4c4;
+      --text-mid: #d4dbe6;
+      --white: #ffffff;
+      --serif: 'Libre Baskerville', Georgia, serif;
+      --display: 'Bebas Neue', Impact, sans-serif;
+      --sans: 'DM Sans', system-ui, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--navy);
+      color: var(--cream);
+      font-family: var(--sans);
+      font-weight: 300;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 3rem;
+      background: rgba(14, 26, 43, 0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(201, 168, 76, 0.15);
+    }
+
+    .nav-logo {
+      font-family: var(--display);
+      font-size: 1.4rem;
+      letter-spacing: 0.12em;
+      color: var(--gold);
+      text-decoration: none;
+    }
+
+    .nav-logo span { color: var(--cream); }
+
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--gold); }
+
+    .nav-cta {
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--navy) !important;
+      background: var(--gold);
+      padding: 0.5rem 1.4rem;
+      border-radius: 2px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .nav-cta:hover { background: var(--gold-light) !important; }
+
+    /* HERO */
+    .post-hero {
+      padding: 9rem 3rem 5rem;
+      max-width: 820px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .post-meta {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .post-label {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border-left: 2px solid var(--gold);
+      padding-left: 0.75rem;
+    }
+
+    .post-date {
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-light);
+    }
+
+    .post-title {
+      font-family: var(--display);
+      font-size: clamp(2.8rem, 6vw, 5rem);
+      line-height: 0.95;
+      letter-spacing: 0.04em;
+      color: var(--white);
+      margin-bottom: 1.75rem;
+    }
+
+    .post-title em {
+      font-style: normal;
+      color: var(--gold);
+    }
+
+    .post-deck {
+      font-family: var(--serif);
+      font-size: 1.15rem;
+      font-style: italic;
+      color: var(--text-mid);
+      line-height: 1.8;
+      max-width: 640px;
+      border-left: 2px solid rgba(201,168,76,0.35);
+      padding-left: 1.25rem;
+    }
+
+    /* STAT CALLOUT */
+    .stat-block {
+      margin: 3.5rem auto;
+      max-width: 820px;
+      padding: 0 3rem;
+    }
+
+    .stat-inner {
+      background: var(--navy-mid);
+      border-left: 3px solid var(--gold);
+      padding: 2rem 2.5rem;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .stat-num {
+      font-family: var(--display);
+      font-size: 5rem;
+      color: var(--gold);
+      line-height: 1;
+      letter-spacing: 0.02em;
+    }
+
+    .stat-text {
+      font-size: 0.95rem;
+      color: var(--text-light);
+      line-height: 1.7;
+    }
+
+    .stat-text strong {
+      display: block;
+      font-size: 1.05rem;
+      color: var(--cream);
+      font-weight: 500;
+      margin-bottom: 0.4rem;
+    }
+
+    .stat-source {
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(201,168,76,0.5);
+      margin-top: 0.5rem;
+    }
+
+    /* BODY COPY */
+    .post-body {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 0 3rem 6rem;
+    }
+
+    .post-body p {
+      font-size: 1rem;
+      color: var(--text-mid);
+      line-height: 1.9;
+      margin-bottom: 1.5rem;
+      font-weight: 300;
+    }
+
+    .post-body p strong {
+      color: var(--cream);
+      font-weight: 500;
+    }
+
+    .post-body .section-break {
+      width: 40px;
+      height: 2px;
+      background: var(--gold);
+      margin: 2.5rem 0;
+      opacity: 0.6;
+    }
+
+    .pull-quote {
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      font-style: italic;
+      color: var(--cream);
+      line-height: 1.75;
+      border-left: 2px solid var(--gold);
+      padding: 0.5rem 0 0.5rem 1.5rem;
+      margin: 2.5rem 0;
+    }
+
+    /* DATA ROW */
+    .data-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: rgba(201,168,76,0.12);
+      margin: 2.5rem 0;
+    }
+
+    .data-cell {
+      background: var(--navy-mid);
+      padding: 1.5rem;
+    }
+
+    .data-cell-num {
+      font-family: var(--display);
+      font-size: 2.8rem;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .data-cell-label {
+      font-size: 0.85rem;
+      color: var(--text-light);
+      line-height: 1.5;
+    }
+
+    .data-cell-source {
+      font-size: 0.7rem;
+      color: rgba(201,168,76,0.4);
+      margin-top: 0.4rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    /* CLOSE */
+    .post-close {
+      background: var(--navy-mid);
+      border-top: 1px solid rgba(201,168,76,0.15);
+      padding: 4rem 3rem;
+    }
+
+    .post-close-inner {
+      max-width: 820px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .post-close-text {
+      font-size: 0.85rem;
+      color: var(--text-light);
+      line-height: 1.7;
+    }
+
+    .post-close-text strong {
+      display: block;
+      font-size: 0.95rem;
+      color: var(--cream);
+      margin-bottom: 0.25rem;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--navy);
+      background: var(--gold);
+      padding: 0.9rem 2rem;
+      border-radius: 2px;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+
+    .btn-primary:hover { background: var(--gold-light); }
+
+    /* FOOTER */
+    footer {
+      background: var(--navy-mid);
+      padding: 2rem 3rem;
+      border-top: 1px solid rgba(201,168,76,0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-logo {
+      font-family: var(--display);
+      font-size: 1.1rem;
+      letter-spacing: 0.12em;
+      color: var(--gold);
+    }
+
+    .footer-logo span { color: var(--cream); }
+
+    .footer-copy {
+      font-size: 0.75rem;
+      color: var(--text-light);
+    }
+
+    @media (max-width: 768px) {
+      nav { padding: 1rem 1.5rem; }
+      .nav-links { display: none; }
+      .post-hero, .post-body, .stat-block { padding-left: 1.5rem; padding-right: 1.5rem; }
+      .stat-inner { grid-template-columns: 1fr; gap: 1rem; }
+      .data-row { grid-template-columns: 1fr; }
+      .post-close { padding: 3rem 1.5rem; }
+      footer { padding: 2rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="index.html">ETG <span>/ Expeditionary Talent Group</span></a>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="/blog.html">From the Field</a></li>
+      <li><a href="index.html#contact" class="nav-cta">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="post-hero">
+    <div class="post-meta">
+      <span class="post-label">From the Field</span>
+      <span class="post-date">June 2026</span>
+    </div>
+    <h1 class="post-title">The Funnel Is Full.<br><em>The Pipeline</em><br>Is Empty.</h1>
+    <p class="post-deck">90% of companies missed their hiring goals last year. The industry diagnosed a speed problem. The data points somewhere else entirely.</p>
+  </div>
+
+  <div class="stat-block">
+    <div class="stat-inner">
+      <div class="stat-num">90%</div>
+      <div class="stat-text">
+        <strong>of companies missed their hiring goals in 2025.</strong>
+        One in three missed by a wide margin. Applications per opening doubled since 2022. Completed hires fell for the third straight year.
+        <div class="stat-source">GoodTime 2026 Hiring Insights Report · 500+ TA leaders surveyed</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-body">
+
+    <p>The talent shortage is real. But it is not what it looks like from inside a bloated applicant funnel.</p>
+
+    <p>More applications are coming in than at any point in the last decade. Hiring rates are falling. The gap between those two facts is where most companies are losing revenue they will never recover.</p>
+
+    <p>An unfilled field operations role does not just sit on an org chart. It bleeds. A branch running short staffed absorbs overtime across the team, loses contract response time, and forces a manager to split attention between the work and the gap. Multiply that across a network of locations and the number gets large fast. One open setup tech role in San Diego. One branch ops manager position that stayed open for four months. That is not a talent shortage story. That is a revenue story.</p>
+
+    <div class="section-break"></div>
+
+    <p>The industry's answer to this problem is speed. Process more candidates faster. Automate the top of the funnel. Move people through before they drop off.</p>
+
+    <p>That answer assumes the problem is throughput. The data suggests otherwise.</p>
+
+    <div class="data-row">
+      <div class="data-cell">
+        <div class="data-cell-num">34%</div>
+        <div class="data-cell-label">of companies hit less than half their hiring goals in 2025</div>
+        <div class="data-cell-source">GoodTime 2026</div>
+      </div>
+      <div class="data-cell">
+        <div class="data-cell-num">2x</div>
+        <div class="data-cell-label">Applications per opening since 2022. Completed hires still falling.</div>
+        <div class="data-cell-source">BambooHR 2026</div>
+      </div>
+      <div class="data-cell">
+        <div class="data-cell-num">74%</div>
+        <div class="data-cell-label">Top performers kept headcount flat and reorganized around better process</div>
+        <div class="data-cell-source">GoodTime 2026</div>
+      </div>
+    </div>
+
+    <p>The 10% of companies that hit their goals did not get there by moving faster. They were 74% more likely to keep recruiting headcount flat and reorganize around a different question: <strong>who should enter this process, and why.</strong></p>
+
+    <p>That is a different problem than speed. And it requires a different answer.</p>
+
+    <div class="section-break"></div>
+
+    <p class="pull-quote">The funnel is not empty. It is full of candidates who are misaligned on role, location, or comp before the first conversation happens.</p>
+
+    <p>In industrial and field operations hiring, that misalignment has a specific shape. The resume clears the screen. The candidate makes it through the process. And then they show up on day one unprepared for the pace, the independence, or the reality of the role.</p>
+
+    <p>Crap in, crap out. A faster funnel just delivers the wrong person sooner.</p>
+
+    <p>Neither outcome shows up as a process failure on a dashboard. Both show up as turnover. Both show up as another open req. Both cost money.</p>
+
+    <div class="section-break"></div>
+
+    <p>The fix is not a faster funnel. It is a better one. Fewer candidates who are actually aligned. Role requirements defined against operational reality, not a job description written two years ago. Comp and location confirmed before anyone spends time on a conversation.</p>
+
+    <p>The companies that hit their hiring goals last year built systems around that logic. They stopped treating every application as a candidate and started treating the evaluation itself as the work.</p>
+
+    <p>That shift is available to any organization willing to look honestly at where the revenue is actually going.</p>
+
+  </div>
+
+  <div class="post-close">
+    <div class="post-close-inner">
+      <div class="post-close-text">
+        <strong>Expeditionary Talent Group</strong>
+        Veteran-owned executive search for industrial, field operations, and technical roles. San Diego and nationwide.
+        <br>aric.forfar@expeditionarytalentgroup.com &nbsp;·&nbsp; 630.973.3751
+      </div>
+      <a href="index.html#contact" class="btn-primary">Get in Touch</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-logo">ETG <span>/ Expeditionary Talent Group</span></div>
+    <p class="footer-copy">© 2026 Expeditionary Talent Group. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

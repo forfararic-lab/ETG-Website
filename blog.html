@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>From the Field | Expeditionary Talent Group</title>
+  <meta name="description" content="On veteran talent. On what industrial companies keep getting wrong. On why most recruiting firms optimize for the wrong things." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    :root {
+      --navy: #0e1a2b; --navy-mid: #162236; --navy-light: #1e3048;
+      --gold: #c9a84c; --gold-light: #e8c97a; --cream: #f4f1ea;
+      --text-light: #a8b4c4; --text-mid: #d4dbe6; --white: #ffffff;
+      --serif: 'Libre Baskerville', Georgia, serif;
+      --display: 'Bebas Neue', Impact, sans-serif;
+      --sans: 'DM Sans', system-ui, sans-serif;
+    }
+    body { background: var(--navy); color: var(--cream); font-family: var(--sans); font-weight: 300; line-height: 1.7; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+
+    /* NAV */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.25rem 3rem; background: rgba(14,26,43,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(201,168,76,0.15); }
+    .nav-logo { font-family: var(--display); font-size: 1.4rem; letter-spacing: 0.12em; color: var(--gold); text-decoration: none; }
+    .nav-logo span { color: var(--cream); }
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+    .nav-links a { font-size: 0.8rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-mid); text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-cta { color: var(--navy) !important; background: var(--gold); padding: 0.5rem 1.4rem; border-radius: 2px; }
+    .nav-cta:hover { background: var(--gold-light) !important; }
+
+    /* HERO */
+    .page-hero { padding: 9rem 3rem 5rem; max-width: 900px; margin: 0 auto; }
+    .hero-label { display: inline-block; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); border-left: 2px solid var(--gold); padding-left: 0.75rem; margin-bottom: 1.5rem; }
+    .hero-headline { font-family: var(--display); font-size: clamp(3rem, 6vw, 5.5rem); line-height: 0.95; letter-spacing: 0.04em; color: var(--white); margin-bottom: 1.5rem; }
+    .hero-headline em { font-style: normal; color: var(--gold); }
+    .hero-dek { font-family: var(--serif); font-size: 1.05rem; font-style: italic; color: var(--text-light); line-height: 1.85; max-width: 580px; }
+
+    /* FEATURED POST */
+    .featured { padding: 0 3rem 5rem; max-width: 900px; margin: 0 auto; }
+    .featured-label { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.25rem; display: flex; align-items: center; gap: 0.75rem; }
+    .featured-label::after { content: ''; flex: 1; height: 1px; background: rgba(201,168,76,0.2); }
+    .featured-card { display: grid; grid-template-columns: 1fr 1fr; gap: 0; background: rgba(201,168,76,0.08); border: 1px solid rgba(201,168,76,0.15); text-decoration: none; transition: background 0.25s; }
+    .featured-card:hover { background: rgba(201,168,76,0.12); }
+    .featured-accent { background: var(--navy-mid); display: flex; align-items: center; justify-content: center; padding: 3rem; border-right: 1px solid rgba(201,168,76,0.12); }
+    .featured-accent-inner { text-align: center; }
+    .featured-num { font-family: var(--display); font-size: 7rem; color: rgba(201,168,76,0.12); line-height: 1; }
+    .featured-tag-label { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); border: 1px solid rgba(201,168,76,0.35); padding: 0.25rem 0.8rem; display: inline-block; margin-top: 1rem; }
+    .featured-content { padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between; }
+    .featured-meta { font-size: 0.75rem; color: var(--text-light); margin-bottom: 1rem; }
+    .featured-content h2 { font-family: var(--serif); font-size: 1.5rem; font-weight: 700; color: var(--cream); line-height: 1.4; margin-bottom: 1rem; }
+    .featured-content p { font-size: 0.92rem; color: var(--text-light); line-height: 1.75; margin-bottom: 1.75rem; flex-grow: 1; }
+    .read-link { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.3); padding-bottom: 2px; transition: border-color 0.2s; width: fit-content; }
+    .read-link:hover { border-color: var(--gold); }
+
+    /* POST GRID */
+    .posts-section { padding: 0 3rem 7rem; max-width: 900px; margin: 0 auto; }
+    .posts-label { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.25rem; display: flex; align-items: center; gap: 0.75rem; }
+    .posts-label::after { content: ''; flex: 1; height: 1px; background: rgba(201,168,76,0.2); }
+    .posts-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5px; background: rgba(201,168,76,0.1); border: 1px solid rgba(201,168,76,0.12); }
+    .post-card { background: var(--navy-mid); padding: 2rem 2rem 1.75rem; display: flex; flex-direction: column; text-decoration: none; transition: background 0.25s; position: relative; }
+    .post-card:hover { background: var(--navy-light); }
+    .post-card-meta { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.85rem; }
+    .post-card h3 { font-family: var(--serif); font-size: 1.05rem; font-weight: 700; color: var(--cream); line-height: 1.45; margin-bottom: 0.85rem; }
+    .post-card p { font-size: 0.88rem; color: var(--text-light); line-height: 1.7; margin-bottom: 1.5rem; flex-grow: 1; }
+    .post-card-link { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); border-bottom: 1px solid rgba(201,168,76,0.25); padding-bottom: 2px; width: fit-content; transition: border-color 0.2s; }
+    .post-card:hover .post-card-link { border-color: var(--gold); }
+    .post-border { position: absolute; bottom: 0; left: 2rem; width: 0; height: 2px; background: var(--gold); transition: width 0.3s; }
+    .post-card:hover .post-border { width: calc(100% - 4rem); }
+
+    /* FOOTER */
+    footer { background: var(--navy-mid); padding: 2.5rem 3rem; border-top: 1px solid rgba(201,168,76,0.12); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .footer-logo { font-family: var(--display); font-size: 1.1rem; letter-spacing: 0.12em; color: var(--gold); }
+    .footer-logo span { color: var(--cream); }
+    .footer-nav { display: flex; gap: 2rem; list-style: none; }
+    .footer-nav a { font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-light); text-decoration: none; transition: color 0.2s; }
+    .footer-nav a:hover { color: var(--gold); }
+    .footer-copy { font-size: 0.75rem; color: var(--text-light); width: 100%; text-align: center; padding-top: 1.5rem; border-top: 1px solid rgba(201,168,76,0.08); }
+
+    @media (max-width: 768px) {
+      nav { padding: 1rem 1.5rem; }
+      .nav-links { display: none; }
+      .page-hero { padding: 7rem 1.5rem 3rem; }
+      .featured { padding: 0 1.5rem 3rem; }
+      .featured-card { grid-template-columns: 1fr; }
+      .featured-accent { display: none; }
+      .posts-section { padding: 0 1.5rem 5rem; }
+      .posts-grid { grid-template-columns: 1fr; }
+      footer { padding: 2rem 1.5rem; flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="index.html">ETG <span>/ Expeditionary Talent Group</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#why">About</a></li>
+      <li><a href="blog.html">From the Field</a></li>
+      <li><a href="index.html#contact" class="nav-cta">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <span class="hero-label">From the Field</span>
+    <h1 class="hero-headline">We Have <em>Opinions</em><br>About Hiring.</h1>
+    <p class="hero-dek">On veteran talent. On what industrial companies keep getting wrong. On why most recruiting firms optimize for the wrong things.</p>
+  </div>
+
+  <!-- FEATURED POST -->
+  <div class="featured">
+    <div class="featured-label">Latest</div>
+    <a href="/blog/reshoring-talent-gap.html" class="featured-card">
+      <div class="featured-accent">
+        <div class="featured-accent-inner">
+          <div class="featured-num">06</div>
+          <div class="featured-tag-label">Manufacturing</div>
+        </div>
+      </div>
+      <div class="featured-content">
+        <div>
+          <p class="featured-meta">June 2026</p>
+          <h2>The Talent Gap Is the Constraint: What Reshoring Actually Requires</h2>
+          <p>Private sector U.S. manufacturing investment sits at $1.765 trillion across 160 companies and 37 states. The facilities are being built. The workforce is not keeping up. And smaller manufacturers are losing the talent competition before the search even starts.</p>
+        </div>
+        <span class="read-link">Read more →</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- POST GRID -->
+  <div class="posts-section">
+    <div class="posts-label">All Posts</div>
+    <div class="posts-grid">
+
+      <a href="/blog/etg-blog-funnel.html" class="post-card">
+        <p class="post-card-meta">Industry &nbsp;·&nbsp; June 2026</p>
+        <h3>The Funnel Is Full. The Pipeline Is Empty.</h3>
+        <p>90% of companies missed their hiring goals last year. The industry diagnosed a speed problem. The data points somewhere else entirely.</p>
+        <span class="post-card-link">Read more →</span>
+        <div class="post-border"></div>
+      </a>
+
+      <a href="/blog/why-field-service-roles-stay-open.html" class="post-card">
+        <p class="post-card-meta">Field Service &nbsp;·&nbsp; May 2026</p>
+        <h3>Why Field Service Roles Stay Open 60 Plus Days</h3>
+        <p>Most industrial companies blame the talent market when field service roles go unfilled for months. The real problem is almost always upstream. It starts before the search does.</p>
+        <span class="post-card-link">Read more →</span>
+        <div class="post-border"></div>
+      </a>
+
+      <a href="/blog/ai-over-rotation-recruiting.html" class="post-card">
+        <p class="post-card-meta">Industry &nbsp;·&nbsp; May 2026</p>
+        <h3>The Industry Is Over-Rotating on AI. Here Is What It Is Costing You.</h3>
+        <p>Recruiting just got a new excuse to stop doing the hard part. AI can screen a thousand resumes before lunch. But the hard part was never the volume problem. It was the relationship.</p>
+        <span class="post-card-link">Read more →</span>
+        <div class="post-border"></div>
+      </a>
+
+      <a href="/blog/the-talent-pool-most-recruiters-never-reach.html" class="post-card">
+        <p class="post-card-meta">Access &nbsp;·&nbsp; May 2026</p>
+        <h3>The Talent Pool Most Recruiters Never Reach</h3>
+        <p>Every generalist recruiter is fishing in the same water. ETG is not. Here is where we find the candidates most firms never see, and why that access changes the outcome of a search.</p>
+        <span class="post-card-link">Read more →</span>
+        <div class="post-border"></div>
+      </a>
+
+      <a href="/blog/junior-military-officer-overlooked.html" class="post-card">
+        <p class="post-card-meta">Veteran Talent &nbsp;·&nbsp; May 2026</p>
+        <h3>The Junior Military Officer You Keep Passing Over</h3>
+        <p>A candidate of 26 who led 40 people through a combat deployment is not a junior hire. Here is what hiring managers miss and what that gap is costing their organizations.</p>
+        <span class="post-card-link">Read more →</span>
+        <div class="post-border"></div>
+      </a>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-logo">ETG <span>/ Expeditionary Talent Group</span></div>
+    <ul class="footer-nav">
+      <li><a href="index.html#why">About</a></li>
+      <li><a href="blog.html">From the Field</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <p class="footer-copy">© 2026 Expeditionary Talent Group. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

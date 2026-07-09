@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Talent Gap Is the Constraint: What Reshoring Actually Requires | Expeditionary Talent Group</title>
+  <meta name="description" content="Private sector U.S. manufacturing investment sits at $1.765 trillion. The facilities are being built. The workforce is not keeping up. And smaller manufacturers are losing the talent competition before the search even starts." />
+  <link rel="canonical" href="https://expeditionarytalentgroup.com/blog/reshoring-talent-gap.html" />
+  <meta property="og:title" content="The Talent Gap Is the Constraint: What Reshoring Actually Requires" />
+  <meta property="og:description" content="The facilities are being built. The workforce is not keeping up. And smaller manufacturers are losing the talent competition before the search even starts." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://expeditionarytalentgroup.com/blog/reshoring-talent-gap.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    :root {
+      --navy:#0e1a2b; --navy-mid:#162236; --navy-light:#1e3048;
+      --gold:#c9a84c; --gold-light:#e8c97a; --cream:#f4f1ea;
+      --text-light:#a8b4c4; --text-mid:#d4dbe6; --white:#ffffff;
+      --serif:'Libre Baskerville',Georgia,serif;
+      --display:'Bebas Neue',Impact,sans-serif;
+      --sans:'DM Sans',system-ui,sans-serif;
+    }
+    body { background:var(--navy); color:var(--cream); font-family:var(--sans); font-weight:300; line-height:1.7; -webkit-font-smoothing:antialiased; }
+    nav { position:fixed; top:0; left:0; right:0; z-index:100; display:flex; align-items:center; justify-content:space-between; padding:1.25rem 3rem; background:rgba(14,26,43,0.95); backdrop-filter:blur(8px); border-bottom:1px solid rgba(201,168,76,0.15); }
+    .nav-logo { font-family:var(--display); font-size:1.4rem; letter-spacing:0.12em; color:var(--gold); text-decoration:none; }
+    .nav-logo span { color:var(--cream); }
+    .nav-links { display:flex; gap:2.5rem; list-style:none; }
+    .nav-links a { font-size:0.8rem; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; color:var(--text-mid); text-decoration:none; transition:color 0.2s; }
+    .nav-links a:hover { color:var(--gold); }
+    .nav-cta { color:var(--navy)!important; background:var(--gold); padding:0.5rem 1.4rem; border-radius:2px; }
+    .nav-cta:hover { background:var(--gold-light)!important; }
+    .post-hero { padding:9rem 3rem 5rem; max-width:860px; margin:0 auto; }
+    .post-eyebrow { display:flex; align-items:center; gap:1.25rem; margin-bottom:2rem; }
+    .post-tag { font-size:0.7rem; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); border:1px solid rgba(201,168,76,0.35); padding:0.25rem 0.8rem; }
+    .post-date { font-size:0.75rem; color:var(--text-light); }
+    .post-hero h1 { font-family:var(--display); font-size:clamp(2.8rem,6vw,5rem); line-height:1; letter-spacing:0.04em; color:var(--white); margin-bottom:2rem; }
+    .post-hero h1 em { font-style:normal; color:var(--gold); }
+    .post-rule { width:50px; height:2px; background:var(--gold); margin-bottom:2rem; }
+    .post-dek { font-family:var(--serif); font-size:1.1rem; font-style:italic; color:var(--text-mid); line-height:1.85; max-width:680px; border-left:2px solid var(--gold); padding-left:1.5rem; }
+    .post-body { max-width:720px; margin:0 auto; padding:4rem 3rem 6rem; }
+    .post-body p { font-size:1rem; line-height:1.9; color:var(--text-mid); margin-bottom:1.75rem; }
+    .post-body p strong { color:var(--cream); font-weight:500; }
+    .post-body h2 { font-family:var(--display); font-size:1.6rem; letter-spacing:0.06em; color:var(--white); margin:3rem 0 1.25rem; padding-top:0.5rem; border-top:1px solid rgba(201,168,76,0.15); }
+    .post-body blockquote { border-left:3px solid var(--gold); padding:1.25rem 1.75rem; margin:2.5rem 0; background:rgba(201,168,76,0.04); }
+    .post-body blockquote p { font-family:var(--serif); font-size:1.15rem; font-style:italic; color:var(--cream); margin:0; }
+    .data-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5px; background:rgba(201,168,76,0.1); border:1px solid rgba(201,168,76,0.12); margin:2.5rem 0; }
+    .data-cell { background:var(--navy-mid); padding:1.5rem; }
+    .data-cell .num { font-family:var(--display); font-size:2.5rem; color:var(--gold); line-height:1; margin-bottom:0.4rem; }
+    .data-cell p { font-size:0.82rem; color:var(--text-light); line-height:1.5; margin:0; }
+    .data-cell .source { font-size:0.72rem; color:rgba(201,168,76,0.45); text-transform:uppercase; letter-spacing:0.08em; margin-top:0.4rem; }
+    .btn { display:inline-block; font-size:0.78rem; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; color:var(--navy); background:var(--gold); padding:0.85rem 2rem; border-radius:2px; text-decoration:none; transition:background 0.2s; }
+    .btn:hover { background:var(--gold-light); }
+    .post-cta { max-width:720px; margin:0 auto 4rem; padding:2.5rem 3rem; background:var(--navy-mid); border:1px solid rgba(201,168,76,0.2); }
+    .post-cta p { font-size:0.95rem; color:var(--text-light); margin-bottom:1.5rem; }
+    .post-cta p strong { color:var(--cream); }
+    .back-link { display:block; max-width:720px; margin:0 auto 2rem; padding:0 3rem; font-size:0.75rem; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-light); text-decoration:none; transition:color 0.2s; }
+    .back-link:hover { color:var(--gold); }
+    .back-link::before { content:'← '; }
+    footer { background:var(--navy-mid); padding:2.5rem 3rem; border-top:1px solid rgba(201,168,76,0.12); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; }
+    .footer-logo { font-family:var(--display); font-size:1.1rem; letter-spacing:0.12em; color:var(--gold); }
+    .footer-logo span { color:var(--cream); }
+    .footer-copy { font-size:0.75rem; color:var(--text-light); }
+    @media (max-width:768px) { nav { padding:1rem 1.5rem; } .nav-links { display:none; } .post-hero { padding:7rem 1.5rem 3rem; } .post-body { padding:3rem 1.5rem 4rem; } .post-cta { padding:2rem 1.5rem; } .back-link { padding:0 1.5rem; } footer { padding:2rem 1.5rem; flex-direction:column; align-items:flex-start; } .data-grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="nav-logo" href="/">ETG <span>/ Expeditionary Talent Group</span></a>
+    <ul class="nav-links">
+      <li><a href="/#why">About</a></li>
+      <li><a href="/blog.html">From the Field</a></li>
+      <li><a href="/#contact" class="nav-cta">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <header class="post-hero">
+      <div class="post-eyebrow">
+        <span class="post-tag">Manufacturing</span>
+        <span class="post-date">June 2026</span>
+      </div>
+      <h1>The Talent Gap<br>Is the <em>Constraint</em></h1>
+      <div class="post-rule"></div>
+      <p class="post-dek">Private sector U.S. manufacturing investment sits at $1.765 trillion across 160 companies and 37 states. The facilities are being built. The workforce is not keeping up.</p>
+    </header>
+
+    <div class="post-body">
+
+      <p>Semiconductor fabs, EV battery plants, defense production lines, advanced automation facilities. The capital is committed. The production timelines are set. What is not keeping pace is the workforce required to run what is being built.</p>
+
+      <h2>Workforce Is the Real Bottleneck</h2>
+
+      <p>The U.S. just committed nearly $2 trillion to build new factories. Those factories need skilled people to run them. Automation engineers. Controls technicians. Maintenance specialists. The people who keep complex equipment operating. The schools and training programs that produce those people never scaled to match what is being built right now. Demand surged. Supply did not.</p>
+
+      <p>In a survey of 500 U.S. manufacturers, companies said a larger skilled workforce would bring back more production than tariffs, tax cuts, or a weaker dollar. Not because policy does not matter, but because you cannot run a facility without people who know how to operate it.</p>
+
+      <div class="data-grid">
+        <div class="data-cell">
+          <div class="num">$1.76T</div>
+          <p>Private sector U.S. manufacturing investment commitments across 160 companies and 37 states</p>
+          <div class="source">Reshoring Initiative · June 2026</div>
+        </div>
+        <div class="data-cell">
+          <div class="num">2.1M</div>
+          <p>Manufacturing jobs projected to go unfilled by 2030 — before current reshoring wave added demand</p>
+          <div class="source">Deloitte / Manufacturing Institute</div>
+        </div>
+        <div class="data-cell">
+          <div class="num">30%</div>
+          <p>Of OEMs said they would reshore more production if the skilled labor existed domestically</p>
+          <div class="source">2025 USA Reshoring Survey</div>
+        </div>
+      </div>
+
+      <p>Deloitte and the Manufacturing Institute project 2.1 million manufacturing jobs will go unfilled by 2030. That projection was made before the current reshoring wave added another quarter million positions per year to the demand side. The gap is larger than the projection.</p>
+
+      <h2>Smaller Manufacturers Are Losing Before the Search Starts</h2>
+
+      <p>Large manufacturers are not waiting for the civilian pipeline to fix itself. They are building direct relationships with technical schools and community colleges, securing first access to graduates through internship programs and pipeline development before a req ever opens. They have the brand, the resources, and the runway to do it.</p>
+
+      <p>Smaller and mid-sized manufacturers are competing for the same shrinking pool with none of those structural advantages. No campus partnerships. No employer brand pulling candidates inbound. No dedicated TA function running proactive sourcing.</p>
+
+      <p>They are posting the same job on the same boards as everyone else and hoping. In a market where a qualified automation or controls candidate has three offers on the table, the candidate who fits your role probably never made it to a job board. The pond everyone is fishing is oversaturated. There is another one most companies have never cast a line in.</p>
+
+      <h2>The Candidate Pool Most Companies Are Not Looking At</h2>
+
+      <p>200,000 people leave military service every year. Some of them kept nuclear reactors running. Some of them managed logistics chains across three countries. Some of them led infantry units through highly complex operations.</p>
+
+      <p>They are not the same person.</p>
+
+      <p>Being open to veteran talent is a starting point. Knowing whether you need the one who ran the supply chain or the one who ran the people is the actual work. Navy nuclear techs, Army turbine mechanics, and Air Force electrical systems specialists do not belong in the same candidate pool. Neither do logistics officers and infantry commanders.</p>
+
+      <p>Companies that get this right identify the specific military occupational backgrounds that map to their technical requirements and source deliberately from those communities. That is a different exercise than attending a hiring event and hoping the right people show up.</p>
+
+      <h2>What Determines Who Wins</h2>
+
+      <p>The reshoring wave is not slowing. The investment is committed. The production timelines are set. But the hiring processes most industrial companies are running were not built for this market.</p>
+
+      <p>They were built for a market where the employer held the leverage. Post the job, collect applications, run candidates through multiple rounds of interviews, get committee alignment, extend an offer. That process made sense when candidates were waiting.</p>
+
+      <p>They are not waiting anymore.</p>
+
+      <p>In a market where a qualified automation or controls candidate has three offers on the table, a nine day hiring loop is not a process. It is an elimination round. The candidate who fits your role accepted somewhere else on day four.</p>
+
+      <p>The companies winning on talent right now have shortened decision cycles, reduced interview stages, and empowered hiring managers to move without waiting for consensus. They treat hiring a controls engineer the same way they treat a capital equipment decision. With urgency, with clear criteria, and with someone accountable for the outcome.</p>
+
+      <p>What separates the companies that hit their production targets from the ones that staff new facilities below capacity comes down to one question: did they solve the talent problem before it became the constraint?</p>
+
+      <p>Speed matters. Process design matters. And knowing which talent pools to target before the search launches may be the most important decision a hiring team makes in the next three years.</p>
+
+    </div>
+
+    <div class="post-cta">
+      <p><strong>If you are standing up a new facility or filling technical roles that have stayed open longer than they should,</strong> we would rather spend 20 minutes understanding the situation than send you a stack of resumes that will not work out.</p>
+      <a href="/#contact" class="btn">Start the conversation</a>
+    </div>
+
+  </article>
+
+  <a href="/blog.html" class="back-link">Back to From the Field</a>
+
+  <footer>
+    <div class="footer-logo">ETG <span>/ Expeditionary Talent Group</span></div>
+    <p class="footer-copy">© 2026 Expeditionary Talent Group. All rights reserved.</p>
+  </footer>
+</body>
+</html>
