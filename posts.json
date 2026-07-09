@@ -1,0 +1,52 @@
+{
+  "posts": [
+    {
+      "slug": "reshoring-talent-gap",
+      "title": "The Talent Gap Is the Constraint: What Reshoring Actually Requires",
+      "tag": "Manufacturing",
+      "date": "2026-06-15",
+      "dateLabel": "June 2026",
+      "excerpt": "Private sector U.S. manufacturing investment sits at $1.765 trillion across 160 companies and 37 states. The facilities are being built. The workforce is not keeping up. And smaller manufacturers are losing the talent competition before the search even starts."
+    },
+    {
+      "slug": "etg-blog-funnel",
+      "title": "The Funnel Is Full. The Pipeline Is Empty.",
+      "tag": "Industry",
+      "date": "2026-06-01",
+      "dateLabel": "June 2026",
+      "excerpt": "90% of companies missed their hiring goals last year. The industry diagnosed a speed problem. The data points somewhere else entirely."
+    },
+    {
+      "slug": "why-field-service-roles-stay-open",
+      "title": "Why Field Service Roles Stay Open 60 Plus Days",
+      "tag": "Field Service",
+      "date": "2026-05-20",
+      "dateLabel": "May 2026",
+      "excerpt": "Most industrial companies blame the talent market when field service roles go unfilled for months. The real problem is almost always upstream. It starts before the search does."
+    },
+    {
+      "slug": "ai-over-rotation-recruiting",
+      "title": "The Industry Is Over-Rotating on AI. Here Is What It Is Costing You.",
+      "tag": "Industry",
+      "date": "2026-05-13",
+      "dateLabel": "May 2026",
+      "excerpt": "Recruiting just got a new excuse to stop doing the hard part. AI can screen a thousand resumes before lunch. But the hard part was never the volume problem. It was the relationship."
+    },
+    {
+      "slug": "the-talent-pool-most-recruiters-never-reach",
+      "title": "The Talent Pool Most Recruiters Never Reach",
+      "tag": "Access",
+      "date": "2026-05-06",
+      "dateLabel": "May 2026",
+      "excerpt": "Every generalist recruiter is fishing in the same water. ETG is not. Here is where we find the candidates most firms never see, and why that access changes the outcome of a search."
+    },
+    {
+      "slug": "junior-military-officer-overlooked",
+      "title": "The Junior Military Officer You Keep Passing Over",
+      "tag": "Veteran Talent",
+      "date": "2026-05-01",
+      "dateLabel": "May 2026",
+      "excerpt": "A candidate of 26 who led 40 people through a combat deployment is not a junior hire. Here is what hiring managers miss and what that gap is costing their organizations."
+    }
+  ]
+}
