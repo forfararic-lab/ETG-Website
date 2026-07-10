@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Cost of the Empty Seat | Expeditionary Talent Group</title>
+  <meta name="description" content="The real cost of an open role is not what you paid a bad hire. It is what you lost every week the seat stayed empty." />
+  <link rel="canonical" href="https://expeditionarytalentgroup.com/blog/the-cost-of-the-empty-seat.html" />
+  <meta property="og:title" content="The Cost of the Empty Seat" />
+  <meta property="og:description" content="The real cost of an open role is not what you paid a bad hire. It is what you lost every week the seat stayed empty." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://expeditionarytalentgroup.com/blog/the-cost-of-the-empty-seat.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    :root {
+      --navy:#0e1a2b; --navy-mid:#162236; --navy-light:#1e3048;
+      --gold:#c9a84c; --gold-light:#e8c97a; --cream:#f4f1ea;
+      --text-light:#a8b4c4; --text-mid:#d4dbe6; --white:#ffffff;
+      --serif:'Libre Baskerville',Georgia,serif;
+      --display:'Bebas Neue',Impact,sans-serif;
+      --sans:'DM Sans',system-ui,sans-serif;
+    }
+    body { background:var(--navy); color:var(--cream); font-family:var(--sans); font-weight:300; line-height:1.7; -webkit-font-smoothing:antialiased; }
+    nav { position:fixed; top:0; left:0; right:0; z-index:100; display:flex; align-items:center; justify-content:space-between; padding:1.25rem 3rem; background:rgba(14,26,43,0.95); backdrop-filter:blur(8px); border-bottom:1px solid rgba(201,168,76,0.15); }
+    .nav-logo { font-family:var(--display); font-size:1.4rem; letter-spacing:0.12em; color:var(--gold); text-decoration:none; }
+    .nav-logo span { color:var(--cream); }
+    .nav-links { display:flex; gap:2.5rem; list-style:none; }
+    .nav-links a { font-size:0.8rem; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; color:var(--text-mid); text-decoration:none; transition:color 0.2s; }
+    .nav-links a:hover { color:var(--gold); }
+    .nav-cta { color:var(--navy)!important; background:var(--gold); padding:0.5rem 1.4rem; border-radius:2px; }
+    .nav-cta:hover { background:var(--gold-light)!important; }
+    .post-hero { padding:9rem 3rem 5rem; max-width:860px; margin:0 auto; }
+    .post-eyebrow { display:flex; align-items:center; gap:1.25rem; margin-bottom:2rem; }
+    .post-tag { font-size:0.7rem; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); border:1px solid rgba(201,168,76,0.35); padding:0.25rem 0.8rem; }
+    .post-date { font-size:0.75rem; color:var(--text-light); }
+    .post-hero h1 { font-family:var(--display); font-size:clamp(2.8rem,6vw,5rem); line-height:1; letter-spacing:0.04em; color:var(--white); margin-bottom:2rem; }
+    .post-rule { width:50px; height:2px; background:var(--gold); margin-bottom:2rem; }
+    .post-dek { font-family:var(--serif); font-size:1.1rem; font-style:italic; color:var(--text-mid); line-height:1.85; max-width:680px; border-left:2px solid var(--gold); padding-left:1.5rem; }
+    .post-body { max-width:720px; margin:0 auto; padding:4rem 3rem 6rem; }
+    .post-body p { font-size:1rem; line-height:1.9; color:var(--text-mid); margin-bottom:1.75rem; }
+    .post-body p strong { color:var(--cream); font-weight:500; }
+    .post-body h2 { font-family:var(--display); font-size:1.6rem; letter-spacing:0.06em; color:var(--white); margin:3rem 0 1.25rem; padding-top:0.5rem; border-top:1px solid rgba(201,168,76,0.15); }
+    .post-body blockquote { border-left:3px solid var(--gold); padding:1.25rem 1.75rem; margin:2.5rem 0; background:rgba(201,168,76,0.04); }
+    .post-body blockquote p { font-family:var(--serif); font-size:1.15rem; font-style:italic; color:var(--cream); margin:0; }
+    .data-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5px; background:rgba(201,168,76,0.1); border:1px solid rgba(201,168,76,0.12); margin:2.5rem 0; }
+    .data-cell { background:var(--navy-mid); padding:1.5rem; }
+    .data-cell .num { font-family:var(--display); font-size:2.5rem; color:var(--gold); line-height:1; margin-bottom:0.4rem; }
+    .data-cell p { font-size:0.82rem; color:var(--text-light); line-height:1.5; margin:0; }
+    .data-cell .source { font-size:0.72rem; color:rgba(201,168,76,0.45); text-transform:uppercase; letter-spacing:0.08em; margin-top:0.4rem; }
+    .btn { display:inline-block; font-size:0.78rem; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; color:var(--navy); background:var(--gold); padding:0.85rem 2rem; border-radius:2px; text-decoration:none; transition:background 0.2s; }
+    .btn:hover { background:var(--gold-light); }
+    .post-cta { max-width:720px; margin:0 auto 4rem; padding:2.5rem 3rem; background:var(--navy-mid); border:1px solid rgba(201,168,76,0.2); }
+    .post-cta p { font-size:0.95rem; color:var(--text-light); margin-bottom:1.5rem; }
+    .post-cta p strong { color:var(--cream); }
+    .back-link { display:block; max-width:720px; margin:0 auto 2rem; padding:0 3rem; font-size:0.75rem; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-light); text-decoration:none; transition:color 0.2s; }
+    .back-link:hover { color:var(--gold); }
+    .back-link::before { content:'← '; }
+    footer { background:var(--navy-mid); padding:2.5rem 3rem; border-top:1px solid rgba(201,168,76,0.12); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; }
+    .footer-logo { font-family:var(--display); font-size:1.1rem; letter-spacing:0.12em; color:var(--gold); }
+    .footer-logo span { color:var(--cream); }
+    .footer-copy { font-size:0.75rem; color:var(--text-light); }
+    @media (max-width:768px) { nav { padding:1rem 1.5rem; } .nav-links { display:none; } .post-hero { padding:7rem 1.5rem 3rem; } .post-body { padding:3rem 1.5rem 4rem; } .post-cta { padding:2rem 1.5rem; } .back-link { padding:0 1.5rem; } footer { padding:2rem 1.5rem; flex-direction:column; align-items:flex-start; } .data-grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="nav-logo" href="/">ETG <span>/ Expeditionary Talent Group</span></a>
+    <ul class="nav-links">
+      <li><a href="/#why">About</a></li>
+      <li><a href="/blog.html">From the Field</a></li>
+      <li><a href="/#contact" class="nav-cta">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <header class="post-hero">
+      <div class="post-eyebrow">
+        <span class="post-tag">Hiring Cost</span>
+        <span class="post-date">July 2026</span>
+      </div>
+      <h1>The Cost of the Empty Seat</h1>
+      <div class="post-rule"></div>
+      <p class="post-dek">There is a number on your P&L that does not have a line item. It is the cost of the role you have been trying to fill for the last four months. Maybe six. Nobody has run the math because nobody wants to.</p>
+    </header>
+
+    <div class="post-body">
+<p>There is a number on your P&L that does not have a line item. It is the cost of the role you have been trying to fill for the last four months. Maybe six. Nobody has run the math because nobody wants to.</p><p>Most hiring leaders I talk to can tell me exactly what they paid a recruiter last year, down to the dollar. Ask what an open operations manager seat costs them per week, and you get a shrug. The math exists. Somebody just has to be willing to sit with a spreadsheet and some bad news.</p><h2>What the Vacancy Is Actually Costing You</h2><p>Start with the direct output gap. If that role was budgeted to generate or protect a specific volume of work, that work is not happening, or it is falling to someone already at capacity, or it is getting done badly by committee. None of those are free. Committees are never free. That is basically the whole joke about committees.</p><p>The second number is harder to see. Call it decision lag. An open leadership seat inside a production or operations environment slows down everything around it. Floor supervisors stop escalating because there is no one left to escalate to. Your best people start solving around the gap instead of through it, because waiting for a decision that is not coming gets old fast. That workaround behavior becomes a habit. Habits become culture. Culture is the expensive kind of thing to fix, right up there with foundation cracks and tax audits.</p><p>The third number almost nobody counts is what it costs the people quietly absorbing the load. Burnout gets treated like a cultural problem. It is a staffing problem wearing a culture problem's jacket. Lose the high performer who was covering the open seat, and congratulations, you are now managing two vacancies for the price of one, which is not the kind of buy-one-get-one anybody asked for.</p><p>A reasonable framework used across HR consulting puts fully loaded vacancy cost at one to three times the annual salary of the open role. For an operations director at $150,000, that puts the drag somewhere between $150,000 and $450,000 a year. Spread that across a 20-week search, and you land somewhere between $57,000 and $173,000 in real cost before anyone has extended a single offer.</p><p>That range is not a scare tactic. It is an argument for treating the search differently than most companies currently treat it, which is to say, as an inconvenience to be minimized rather than a cost center actively bleeding money in the background like a browser tab you forgot to close.</p><h2>Why Searches Drift</h2><p>Most searches drift for one of three reasons, and none of them are exotic.</p><p>The first is an intake process that was never actually finished. The hiring manager had a general sense of the role. HR wrote a job description from a template that has been recycled since a previous administration. Nobody sat down and got specific about what this person needs to do in the first 90 days, what they are actually walking into, or which prior experience predicts success here versus which experience just looks good in a debrief.</p><p>The second is a screening process that optimizes for comfort. Familiar backgrounds. Familiar titles. Safe presentations. The candidate who asks the sharpest questions in the first interview makes some hiring managers nervous, which is an odd thing to penalize in a person you are about to hand real authority to. So does the candidate whose resume does not follow the expected format, even when the actual experience underneath it is exactly right for the work.</p><p>The third is slow feedback loops. A recruiter sends a slate. Internal schedules slip. Two weeks disappear into calendars. The strongest candidate in that slate has already accepted somewhere else, because good people do not sit around waiting to see if you get back to them. The search resets. The vacancy clock, which does not care about anyone's calendar, keeps running.</p><h2>The Search Is Part of the Cost</h2><p>I am not writing this to argue that outside search is always the right call. It is not. Some internal teams run excellent processes and close strong candidates quickly, and good for them, genuinely.</p><p>But the framing most companies use is backwards. The question they ask is, what does this search cost? The better question is what does this vacancy costs, and whether the search process running right now is shortening that timeline or quietly extending it.</p><p>Three contingency firms working the same role sounds like coverage. In practice, it often means three mediocre efforts and a candidate experience that broadcasts organizational chaos to exactly the people you most want to hire. A single firm running a defined intake process is not more expensive once you factor in the drag. It just looks more expensive on the invoice, which is a different thing entirely.</p><p>The firms that move fastest on hard searches are almost always the ones that did the most unglamorous work before the search ever started. Specific outcomes. Real context about the environment. An honest conversation about which prior experience actually matters versus which experience just reads well out loud.</p><h2>A Question Worth Sitting With</h2><p>If your current open role has been open for more than eight weeks, pull up whatever you are tracking on output, overtime, and team capacity right now. Not as a formal exercise. Just a gut check, the kind you do standing at the coffee machine instead of in a meeting that needed a deck.</p><p>The number you land on is the real cost of the search process you are currently running, whether it is internal, contingency, or retained. The vacancy clock does not check which one you picked. It just keeps moving.</p><p>If you want to run these numbers against a role you are working on right now, I am glad to have that conversation. No pitch, just the math and what it implies.</p><p><a href="/contact">Start a conversation with Aric.</a></p>
+    </div>
+
+    <div class="post-cta">
+      <p><strong>If you are standing up a new facility or filling technical roles that have stayed open longer than they should,</strong> we would rather spend 20 minutes understanding the situation than send you a stack of resumes that will not work out.</p>
+      <a href="/#contact" class="btn">Start the conversation</a>
+    </div>
+  </article>
+
+  <a href="/blog.html" class="back-link">Back to From the Field</a>
+
+  <footer>
+    <div class="footer-logo">ETG <span>/ Expeditionary Talent Group</span></div>
+    <p class="footer-copy">© 2026 Expeditionary Talent Group. All rights reserved.</p>
+  </footer>
+</body>
+</html>
