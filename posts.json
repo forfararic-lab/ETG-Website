@@ -1,6 +1,14 @@
 {
   "posts": [
     {
+      "slug": "the-cost-of-the-empty-seat",
+      "title": "The Cost of the Empty Seat",
+      "tag": "Hiring Cost",
+      "date": "2026-07-10",
+      "dateLabel": "July 2026",
+      "excerpt": "The real cost of an open role is not what you paid a bad hire. It is what you lost every week the seat stayed empty."
+    },
+    {
       "slug": "reshoring-talent-gap",
       "title": "The Talent Gap Is the Constraint: What Reshoring Actually Requires",
       "tag": "Manufacturing",
