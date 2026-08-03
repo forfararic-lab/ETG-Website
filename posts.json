@@ -1,6 +1,14 @@
 {
   "posts": [
     {
+      "slug": "the-leader-about-to-leave",
+      "title": "The Leader about to Leave",
+      "tag": "Honest Assessment",
+      "date": "2026-08-03",
+      "dateLabel": "August 2026",
+      "excerpt": "When your best ops leader is going to quit, and why you wont know its coming"
+    },
+    {
       "slug": "what-is-a-leader-2026",
       "title": "What Is a Leader in 2026",
       "tag": "Leadership/Honest Assessment",
