@@ -1,6 +1,14 @@
 {
   "posts": [
     {
+      "slug": "skills-hiring-obsolete",
+      "title": "The Skills You're Hiring For Are Already Obsolete",
+      "tag": "Hiring/Industrial Operations",
+      "date": "2026-08-07",
+      "dateLabel": "August 2026",
+      "excerpt": "Why companies can't define the skills they need. Why job descriptions describe yesterday. Why hiring for today's competency is already failing."
+    },
+    {
       "slug": "the-leader-about-to-leave",
       "title": "The Leader about to Leave",
       "tag": "Honest Assessment",
