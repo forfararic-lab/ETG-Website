@@ -1,6 +1,14 @@
 {
   "posts": [
     {
+      "slug": "screening-for-the-right-things",
+      "title": "Are We Screening for the Right Things?",
+      "tag": "The Honest Assessment",
+      "date": "2026-08-10",
+      "dateLabel": "August 2026",
+      "excerpt": "Five years of experience stopped meaning anything in 2026. But companies keep screening for it anyway. Here's why your filter is broken and what you're missing."
+    },
+    {
       "slug": "skills-hiring-obsolete",
       "title": "The Skills You're Hiring For Are Already Obsolete",
       "tag": "Hiring/Industrial Operations",
