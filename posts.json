@@ -1,6 +1,14 @@
 {
   "posts": [
     {
+      "slug": "define-success-hire",
+      "title": "Do You Know What You Need to Make That Hire Work?",
+      "tag": "Candidate Truth",
+      "date": "2026-08-25",
+      "dateLabel": "August 2026",
+      "excerpt": "Define success beforHow companies diagnose hiring problems by clarifying what hire success actually means."
+    },
+    {
       "slug": "after-you-adopt-skills-hiring",
       "title": "You Adopted Skills Based Hiring. Now What?",
       "tag": "Hiring",
