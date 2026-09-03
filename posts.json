@@ -1,6 +1,14 @@
 {
   "posts": [
     {
+      "slug": "the-500000-person-talent-gap",
+      "title": "Five Hundred Thousand People Who Do Not Exist Yet",
+      "tag": "Industry POV",
+      "date": "2026-09-03",
+      "dateLabel": "September 2026",
+      "excerpt": "The real math behind the 500,000 person skilled talent shortfall in aerospace, defense, and semiconductor manufacturing."
+    },
+    {
       "slug": "define-success-hire",
       "title": "Do You Know What You Need to Make That Hire Work?",
       "tag": "Candidate Truth",
