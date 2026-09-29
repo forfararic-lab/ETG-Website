@@ -1,6 +1,14 @@
 {
   "posts": [
     {
+      "slug": "lead-times-are-a-people-problem",
+      "title": "Lead Times Are A People Problem",
+      "tag": "Industry POV",
+      "date": "2026-09-29",
+      "dateLabel": "September 2026",
+      "excerpt": "Industrial lead times trace back to a hiring gap. The plant managers, operations leaders, and quality engineers needed to run 2027 and 2028 capacity are the real constraint, and veteran talent is a direct functional match."
+    },
+    {
       "slug": "the-same-five-resumes",
       "title": "The Same Five Resumes",
       "tag": "Candidate Truth",
