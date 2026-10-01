@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Expeditionary Talent Group</title>
+  <meta name="description" content="Every hire has two sides. The idea that built ETG, and why people are the point." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    :root {
+      --navy: #0e1a2b; --navy-mid: #162236; --navy-light: #1e3048;
+      --gold: #c9a84c; --gold-light: #e8c97a; --cream: #f4f1ea;
+      --text-light: #a8b4c4; --text-mid: #d4dbe6; --white: #ffffff;
+      --serif: 'Libre Baskerville', Georgia, serif;
+      --display: 'Bebas Neue', Impact, sans-serif;
+      --sans: 'DM Sans', system-ui, sans-serif;
+    }
+    body { background: var(--navy); color: var(--cream); font-family: var(--sans); font-weight: 300; line-height: 1.7; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.25rem 3rem; background: rgba(14,26,43,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(201,168,76,0.15); }
+    .nav-logo { font-family: var(--display); font-size: 1.4rem; letter-spacing: 0.12em; color: var(--gold); text-decoration: none; }
+    .nav-logo span { color: var(--cream); }
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+    .nav-links a { font-size: 0.8rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-mid); text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-cta { color: var(--navy) !important; background: var(--gold); padding: 0.5rem 1.4rem; border-radius: 2px; }
+    .nav-cta:hover { background: var(--gold-light) !important; }
+    .nav-dropdown { position: relative; }
+    .nav-dropdown-menu {
+      display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+      background: var(--navy-mid); border: 1px solid rgba(201,168,76,0.15);
+      min-width: 220px; padding: 0.5rem 0; margin-top: 0.75rem; list-style: none; z-index: 50;
+    }
+    .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+    .nav-dropdown-menu a { display: block; padding: 0.65rem 1.25rem; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-mid); }
+    .nav-dropdown-menu a:hover { color: var(--gold); background: var(--navy-light); }
+
+    .page-hero { padding: 9rem 3rem 4rem; max-width: 900px; margin: 0 auto; }
+    .hero-label { display: inline-block; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); border-left: 2px solid var(--gold); padding-left: 0.75rem; margin-bottom: 1.5rem; }
+    .hero-headline { font-family: var(--display); font-size: clamp(3rem, 6vw, 5.5rem); line-height: 0.95; letter-spacing: 0.04em; color: var(--white); margin-bottom: 1.5rem; }
+    .hero-headline em { font-style: normal; color: var(--gold); }
+    .hero-dek { font-family: var(--serif); font-size: 1.05rem; font-style: italic; color: var(--text-light); line-height: 1.85; max-width: 580px; }
+
+    .content { padding: 0 3rem 5rem; max-width: 720px; margin: 0 auto; }
+    .content p { font-size: 0.98rem; color: var(--text-mid); line-height: 1.9; margin-bottom: 1.4rem; }
+    .content p:last-child { margin-bottom: 0; }
+    .pull { border-left: 2px solid var(--gold); padding-left: 1.5rem; margin: 2.5rem 0; }
+    .pull p { font-family: var(--serif); font-size: 1.15rem; color: var(--cream); line-height: 1.7; font-style: italic; margin: 0; }
+
+    .cta-section { padding: 5rem 3rem 6rem; text-align: center; background: var(--navy-mid); }
+    .mini-divider { width: 40px; height: 2px; background: var(--gold); margin: 0 auto 1.75rem; }
+    .mission-line { font-family: var(--serif); font-size: 1.4rem; font-style: italic; color: var(--gold-light); margin-bottom: 2.5rem; }
+    .btn-primary { display: inline-block; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--navy); background: var(--gold); padding: 0.9rem 2.2rem; border-radius: 2px; text-decoration: none; transition: background 0.2s, transform 0.15s; }
+    .btn-primary:hover { background: var(--gold-light); transform: translateY(-1px); }
+
+    footer { background: var(--navy-mid); padding: 2.5rem 3rem; border-top: 1px solid rgba(201,168,76,0.12); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .footer-logo { font-family: var(--display); font-size: 1.1rem; letter-spacing: 0.12em; color: var(--gold); }
+    .footer-logo span { color: var(--cream); }
+    .footer-nav { display: flex; gap: 2rem; list-style: none; }
+    .footer-nav a { font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-light); text-decoration: none; transition: color 0.2s; }
+    .footer-nav a:hover { color: var(--gold); }
+    .footer-copy { font-size: 0.75rem; color: var(--text-light); width: 100%; text-align: center; padding-top: 1.5rem; border-top: 1px solid rgba(201,168,76,0.08); }
+
+    @media (max-width: 768px) {
+      nav { padding: 1rem 1.5rem; } .nav-links { display: none; } .page-hero { padding: 7rem 1.5rem 3rem; }
+      .content { padding: 0 1.5rem 3.5rem; } .cta-section { padding: 3.5rem 1.5rem 4rem; }
+      footer { padding: 2rem 1.5rem; flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="index.html">ETG <span>/ Expeditionary Talent Group</span></a>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li class="nav-dropdown">
+        <a href="for-companies.html">For Companies</a>
+        <ul class="nav-dropdown-menu">
+          <li><a href="contingent-retained-search.html">Contingent &amp; Retained Search</a></li>
+          <li><a href="fractional-ta.html">Fractional TA</a></li>
+          <li><a href="talent-data-analytics.html">Talent Data Analytics</a></li>
+          <li><a href="military-talent-pipeline.html">Military Talent Pipeline</a></li>
+        </ul>
+      </li>
+      <li><a href="for-candidates.html">For Candidates</a></li>
+      <li><a href="blog.html">From the Field</a></li>
+      <li><a href="index.html#contact" class="nav-cta">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-hero">
+    <span class="hero-label">About</span>
+    <h1 class="hero-headline">I've Sat On <em>Both Sides</em> Of The Table.</h1>
+  </div>
+
+  <div class="content">
+    <p>Every hire has two sides. The company needs the work done. The candidate needs work worth doing. When it goes right, both get what they came for.</p>
+
+    <div class="pull">
+      <p>"That idea is the foundation of ETG."</p>
+    </div>
+
+    <p>I commissioned as a Marine Corps infantry officer in 2011 and left as a Captain in 2017. The job was people. Knowing who sat across the table, knowing who was inside your organization, and putting the right Marine in the right seat. You learn quickly that what someone looks like on paper and what they do when the plan changes are two different things.</p>
+
+    <p>From there I moved into military search for industrial, defense, and aerospace companies. I sat with officers and NCOs working out what came next, and with the leaders trying to fill the seats that kept their operations running. Two sides of the same conversation. The best outcomes came when both sides got the full picture. The candidate understood the role as it really was. The company understood the person behind the resume.</p>
+
+    <div class="pull">
+      <p>"ETG exists to have that conversation every time."</p>
+    </div>
+
+    <p>There is real work waiting across American industry. Plants to run, programs to deliver, capacity to build. There are people capable of doing it, many of them leaving military service every month with the experience to prove it. Others have built successful military and civilian careers and are looking for what comes next. Closing that gap takes honest conversation, knowing what a line on a resume means, and knowing what the job is supposed to do for the company.</p>
+
+    <p>Sometimes that means telling a company the right answer is not this candidate, or not a hire at all. Sometimes it means telling a candidate a role is not the right next step. Both answers serve both sides.</p>
+  </div>
+
+  <div class="cta-section">
+    <div class="mini-divider"></div>
+    <p class="mission-line">People are the point.</p>
+    <a href="index.html#contact" class="btn-primary">Talk to Us</a>
+  </div>
+
+  <footer>
+    <div class="footer-logo">ETG <span>/ Expeditionary Talent Group</span></div>
+    <ul class="footer-nav">
+      <li><a href="about.html">About</a></li>
+      <li><a href="for-companies.html">For Companies</a></li>
+      <li><a href="for-candidates.html">For Candidates</a></li>
+      <li><a href="blog.html">From the Field</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <p class="footer-copy">© 2026 Expeditionary Talent Group. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

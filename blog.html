@@ -28,6 +28,15 @@
     .nav-links a:hover { color: var(--gold); }
     .nav-cta { color: var(--navy) !important; background: var(--gold); padding: 0.5rem 1.4rem; border-radius: 2px; }
     .nav-cta:hover { background: var(--gold-light) !important; }
+    .nav-dropdown { position: relative; }
+    .nav-dropdown-menu {
+      display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+      background: var(--navy-mid); border: 1px solid rgba(201,168,76,0.15);
+      min-width: 240px; padding: 0.5rem 0; margin-top: 0.75rem; list-style: none; z-index: 50;
+    }
+    .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+    .nav-dropdown-menu a { display: block; padding: 0.65rem 1.25rem; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-mid); }
+    .nav-dropdown-menu a:hover { color: var(--gold); background: var(--navy-light); }
     .page-hero { padding: 9rem 3rem 5rem; max-width: 900px; margin: 0 auto; }
     .hero-label { display: inline-block; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); border-left: 2px solid var(--gold); padding-left: 0.75rem; margin-bottom: 1.5rem; }
     .hero-headline { font-family: var(--display); font-size: clamp(3rem, 6vw, 5.5rem); line-height: 0.95; letter-spacing: 0.04em; color: var(--white); margin-bottom: 1.5rem; }
@@ -81,7 +90,17 @@
   <nav>
     <a class="nav-logo" href="index.html">ETG <span>/ Expeditionary Talent Group</span></a>
     <ul class="nav-links">
-      <li><a href="index.html#why">About</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="nav-dropdown">
+        <a href="for-companies.html">For Companies</a>
+        <ul class="nav-dropdown-menu">
+          <li><a href="contingent-retained-search.html">Contingent &amp; Retained Search</a></li>
+          <li><a href="fractional-ta.html">Fractional TA</a></li>
+          <li><a href="talent-data-analytics.html">Talent Data Analytics</a></li>
+          <li><a href="military-talent-pipeline.html">Military Talent Pipeline</a></li>
+        </ul>
+      </li>
+      <li><a href="for-candidates.html">For Candidates</a></li>
       <li><a href="blog.html">From the Field</a></li>
       <li><a href="index.html#contact" class="nav-cta">Contact Us</a></li>
     </ul>
@@ -282,8 +301,9 @@
   <footer>
     <div class="footer-logo">ETG <span>/ Expeditionary Talent Group</span></div>
     <ul class="footer-nav">
-      <li><a href="index.html#why">About</a></li>
-      <li><a href="blog.html">From the Field</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="for-companies.html">For Companies</a></li>
+      <li><a href="for-candidates.html">For Candidates</a></li>
       <li><a href="index.html#contact">Contact</a></li>
     </ul>
     <p class="footer-copy">© 2026 Expeditionary Talent Group. All rights reserved.</p>
