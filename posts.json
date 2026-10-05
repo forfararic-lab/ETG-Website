@@ -1,6 +1,14 @@
 {
   "posts": [
     {
+      "slug": "the-market-stopped-moving",
+      "title": "The Market Stopped Moving",
+      "tag": "Industry POV",
+      "date": "2026-10-05",
+      "dateLabel": "October 2026",
+      "excerpt": "August JOLTS and the September jobs report show a labor market standing still: low hires, low layoffs, and quits near a six year low. What that means for employers who still have to grow."
+    },
+    {
       "slug": "a-wider-search-will-not-fix-this-one",
       "title": "A Wider Search Will Not Fix This One",
       "tag": "Industry POV",
