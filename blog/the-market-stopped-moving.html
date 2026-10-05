@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Market Stopped Moving | Expeditionary Talent Group</title>
+  <meta name="description" content="August JOLTS and the September jobs report show a labor market standing still: low hires, low layoffs, and quits near a six year low. What that means for employers who still have to grow." />
+  <link rel="canonical" href="https://expeditionarytalentgroup.com/blog/the-market-stopped-moving.html" />
+  <meta property="og:title" content="The Market Stopped Moving" />
+  <meta property="og:description" content="August JOLTS and the September jobs report show a labor market standing still: low hires, low layoffs, and quits near a six year low. What that means for employers who still have to grow." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://expeditionarytalentgroup.com/blog/the-market-stopped-moving.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    :root {
+      --navy:#0e1a2b; --navy-mid:#162236; --navy-light:#1e3048;
+      --gold:#c9a84c; --gold-light:#e8c97a; --cream:#f4f1ea;
+      --text-light:#a8b4c4; --text-mid:#d4dbe6; --white:#ffffff;
+      --serif:'Libre Baskerville',Georgia,serif;
+      --display:'Bebas Neue',Impact,sans-serif;
+      --sans:'DM Sans',system-ui,sans-serif;
+    }
+    body { background:var(--navy); color:var(--cream); font-family:var(--sans); font-weight:300; line-height:1.7; -webkit-font-smoothing:antialiased; }
+    nav { position:fixed; top:0; left:0; right:0; z-index:100; display:flex; align-items:center; justify-content:space-between; padding:1.25rem 3rem; background:rgba(14,26,43,0.95); backdrop-filter:blur(8px); border-bottom:1px solid rgba(201,168,76,0.15); }
+    .nav-logo { font-family:var(--display); font-size:1.4rem; letter-spacing:0.12em; color:var(--gold); text-decoration:none; }
+    .nav-logo span { color:var(--cream); }
+    .nav-links { display:flex; gap:2.5rem; list-style:none; }
+    .nav-links a { font-size:0.8rem; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; color:var(--text-mid); text-decoration:none; transition:color 0.2s; }
+    .nav-links a:hover { color:var(--gold); }
+    .nav-cta { color:var(--navy)!important; background:var(--gold); padding:0.5rem 1.4rem; border-radius:2px; }
+    .nav-cta:hover { background:var(--gold-light)!important; }
+    .post-hero { padding:9rem 3rem 5rem; max-width:860px; margin:0 auto; }
+    .post-eyebrow { display:flex; align-items:center; gap:1.25rem; margin-bottom:2rem; }
+    .post-tag { font-size:0.7rem; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); border:1px solid rgba(201,168,76,0.35); padding:0.25rem 0.8rem; }
+    .post-date { font-size:0.75rem; color:var(--text-light); }
+    .post-hero h1 { font-family:var(--display); font-size:clamp(2.8rem,6vw,5rem); line-height:1; letter-spacing:0.04em; color:var(--white); margin-bottom:2rem; }
+    .post-rule { width:50px; height:2px; background:var(--gold); margin-bottom:2rem; }
+    .post-dek { font-family:var(--serif); font-size:1.1rem; font-style:italic; color:var(--text-mid); line-height:1.85; max-width:680px; border-left:2px solid var(--gold); padding-left:1.5rem; }
+    .post-body { max-width:720px; margin:0 auto; padding:4rem 3rem 6rem; }
+    .post-body p { font-size:1rem; line-height:1.9; color:var(--text-mid); margin-bottom:1.75rem; }
+    .post-body p strong { color:var(--cream); font-weight:500; }
+    .post-body h2 { font-family:var(--display); font-size:1.6rem; letter-spacing:0.06em; color:var(--white); margin:3rem 0 1.25rem; padding-top:0.5rem; border-top:1px solid rgba(201,168,76,0.15); }
+    .post-body blockquote { border-left:3px solid var(--gold); padding:1.25rem 1.75rem; margin:2.5rem 0; background:rgba(201,168,76,0.04); }
+    .post-body blockquote p { font-family:var(--serif); font-size:1.15rem; font-style:italic; color:var(--cream); margin:0; }
+    .data-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5px; background:rgba(201,168,76,0.1); border:1px solid rgba(201,168,76,0.12); margin:2.5rem 0; }
+    .data-cell { background:var(--navy-mid); padding:1.5rem; }
+    .data-cell .num { font-family:var(--display); font-size:2.5rem; color:var(--gold); line-height:1; margin-bottom:0.4rem; }
+    .data-cell p { font-size:0.82rem; color:var(--text-light); line-height:1.5; margin:0; }
+    .data-cell .source { font-size:0.72rem; color:rgba(201,168,76,0.45); text-transform:uppercase; letter-spacing:0.08em; margin-top:0.4rem; }
+    .btn { display:inline-block; font-size:0.78rem; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; color:var(--navy); background:var(--gold); padding:0.85rem 2rem; border-radius:2px; text-decoration:none; transition:background 0.2s; }
+    .btn:hover { background:var(--gold-light); }
+    .post-cta { max-width:720px; margin:0 auto 4rem; padding:2.5rem 3rem; background:var(--navy-mid); border:1px solid rgba(201,168,76,0.2); }
+    .post-cta p { font-size:0.95rem; color:var(--text-light); margin-bottom:1.5rem; }
+    .post-cta p strong { color:var(--cream); }
+    .back-link { display:block; max-width:720px; margin:0 auto 2rem; padding:0 3rem; font-size:0.75rem; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-light); text-decoration:none; transition:color 0.2s; }
+    .back-link:hover { color:var(--gold); }
+    .back-link::before { content:'← '; }
+    footer { background:var(--navy-mid); padding:2.5rem 3rem; border-top:1px solid rgba(201,168,76,0.12); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; }
+    .footer-logo { font-family:var(--display); font-size:1.1rem; letter-spacing:0.12em; color:var(--gold); }
+    .footer-logo span { color:var(--cream); }
+    .footer-copy { font-size:0.75rem; color:var(--text-light); }
+    @media (max-width:768px) { nav { padding:1rem 1.5rem; } .nav-links { display:none; } .post-hero { padding:7rem 1.5rem 3rem; } .post-body { padding:3rem 1.5rem 4rem; } .post-cta { padding:2rem 1.5rem; } .back-link { padding:0 1.5rem; } footer { padding:2rem 1.5rem; flex-direction:column; align-items:flex-start; } .data-grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="nav-logo" href="/">ETG <span>/ Expeditionary Talent Group</span></a>
+    <ul class="nav-links">
+      <li><a href="/#why">About</a></li>
+      <li><a href="/blog.html">From the Field</a></li>
+      <li><a href="/#contact" class="nav-cta">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <header class="post-hero">
+      <div class="post-eyebrow">
+        <span class="post-tag">Industry POV</span>
+        <span class="post-date">October 2026</span>
+      </div>
+      <h1>The Market Stopped Moving</h1>
+      <div class="post-rule"></div>
+      <p class="post-dek">Openings, layoffs, and quits all fell in August. The labor market is not breaking. It stopped moving, and that changes who hires well.</p>
+    </header>
+
+    <div class="post-body">
+<p>Job openings fell to 7.08 million in August, the lowest since March. Layoffs fell to 1.64 million, the lowest since March 2025. Quits fell to 3.07 million.</p>
+<p>Read those three together and the picture is not a labor market falling apart. It is a labor market standing still.</p>
+<p>Employers are not cutting. They are not adding much either. September payrolls grew by 29,000, well under forecasts, and July and August were revised down a combined 60,000. Hires held near 5.2 million in August, and the entire monthly gain came from government. Private sector hiring was flat.</p>
+<p>Low hire, low fire. Companies are holding onto the people they have and getting careful about adding more.</p>
+<p>The number that deserves the most attention is quits. The quits rate sat at 1.9 percent in August, tied for the lowest since June 2020. Quits are the closest thing the labor market has to a confidence gauge. People leave a job when they believe the next one is better and safer. Right now, fewer of them believe it.</p>
+<p>That changes the hiring problem in a way the headline numbers hide.</p>
+<p>When quits run high, good people come to market on their own. Post a role and some share of the qualified pool is already looking. When quits fall this far, the qualified pool is still there. It just is not moving. The plant manager who would have taken a call eighteen months ago is staying put, with a stable seat, a known boss, and no appetite to bet on a new one in an uncertain economy. The people a company most wants are now the people least likely to apply.</p>
+<p>This is the third piece of a problem that I have been working through. The first was the same five resumes showing up across every agency, because everyone runs the same search. The second was the qualified pool itself shrinking as the labor force contracts. The third is this one. The pool that remains has stopped circulating.</p>
+<p>Smaller, and still.</p>
+<p>Not every employer gets to wait. Manufacturing kept adding jobs in September while the broader economy barely moved, and durable goods manufacturing openings climbed in July as total openings fell. Plants ramping against signed contracts, platforms folding in acquisitions, data center and energy builds on fixed schedules. Those companies still have to add people, on a calendar they do not control.</p>
+<p>For them, a still market cuts both ways.</p>
+<p>The hard part is that the people they need are employed and staying put. Posting a role and waiting worked when candidates were in motion. It works far less now. And anyone they do recruit is giving up a stable seat in an uncertain economy, which means the offer has to answer a harder question than pay. Is this role real, is the leadership above it solid, and is it worth the risk of moving right now.</p>
+<p>The opportunity is the part most hiring plans miss. When most employers stop hiring, the competition for people who are moving drops with it. The candidates in motion today face fewer offers than they would have two years ago. A company that recruits actively into a low hire market is competing against fewer buyers for the same talent, at a moment when wage growth has cooled to 3.0 percent.</p>
+<p>So where is the movement?</p>
+<p>There is one population that does not get to choose. Roughly 200,000 service members leave the military every year, and their separation dates do not move with the quits rate or the jobs report. A Staff NCO who ran a maintenance program, or an officer who led a unit through a fielding timeline, is changing jobs on a fixed date whether the economy feels confident or not. In a low quit market, that is one of the few sources of experienced operational talent guaranteed to be in motion.</p>
+<p>That is not an argument for hiring veterans out of goodwill. It is an observation about where movement still exists once everything else has stopped.</p>
+<p>None of this means every open seat should be filled now. A cooling market is also a fair moment to ask whether a role is defined well enough to attract the person it needs, or whether the gap is better solved another way. Softer wage pressure buys time on cost. It does not buy time on supply.</p>
+<p>Stillness punishes the employer waiting for applicants. It rewards the one willing to go find the people who are already moving.</p>
+    </div>
+
+    <div class="post-cta">
+      <p><strong>If a market shift is about to change your hiring plan and the pipeline is not built for it yet,</strong> we would rather spend 20 minutes understanding the situation than send you a stack of resumes that will not work out.</p>
+      <a href="/#contact" class="btn">Start the conversation</a>
+    </div>
+  </article>
+
+  <a href="/blog.html" class="back-link">Back to From the Field</a>
+
+  <footer>
+    <div class="footer-logo">ETG <span>/ Expeditionary Talent Group</span></div>
+    <p class="footer-copy">© 2026 Expeditionary Talent Group. All rights reserved.</p>
+  </footer>
+</body>
+</html>
