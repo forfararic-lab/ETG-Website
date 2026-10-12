@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Hardest Part Is the Intent | Expeditionary Talent Group</title>
+  <meta name="description" content="Why the hardest part of working with AI is writing clear intent, what Marine Corps commander's intent and mission command teach about it, and a one question interview test for the skill." />
+  <link rel="canonical" href="https://expeditionarytalentgroup.com/blog/the-hardest-part-is-the-intent.html" />
+  <meta property="og:title" content="The Hardest Part Is the Intent" />
+  <meta property="og:description" content="Why the hardest part of working with AI is writing clear intent, what Marine Corps commander's intent and mission command teach about it, and a one question interview test for the skill." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://expeditionarytalentgroup.com/blog/the-hardest-part-is-the-intent.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    :root {
+      --navy:#0e1a2b; --navy-mid:#162236; --navy-light:#1e3048;
+      --gold:#c9a84c; --gold-light:#e8c97a; --cream:#f4f1ea;
+      --text-light:#a8b4c4; --text-mid:#d4dbe6; --white:#ffffff;
+      --serif:'Libre Baskerville',Georgia,serif;
+      --display:'Bebas Neue',Impact,sans-serif;
+      --sans:'DM Sans',system-ui,sans-serif;
+    }
+    body { background:var(--navy); color:var(--cream); font-family:var(--sans); font-weight:300; line-height:1.7; -webkit-font-smoothing:antialiased; }
+    nav { position:fixed; top:0; left:0; right:0; z-index:100; display:flex; align-items:center; justify-content:space-between; padding:1.25rem 3rem; background:rgba(14,26,43,0.95); backdrop-filter:blur(8px); border-bottom:1px solid rgba(201,168,76,0.15); }
+    .nav-logo { font-family:var(--display); font-size:1.4rem; letter-spacing:0.12em; color:var(--gold); text-decoration:none; }
+    .nav-logo span { color:var(--cream); }
+    .nav-links { display:flex; gap:2.5rem; list-style:none; }
+    .nav-links a { font-size:0.8rem; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; color:var(--text-mid); text-decoration:none; transition:color 0.2s; }
+    .nav-links a:hover { color:var(--gold); }
+    .nav-cta { color:var(--navy)!important; background:var(--gold); padding:0.5rem 1.4rem; border-radius:2px; }
+    .nav-cta:hover { background:var(--gold-light)!important; }
+    .post-hero { padding:9rem 3rem 5rem; max-width:860px; margin:0 auto; }
+    .post-eyebrow { display:flex; align-items:center; gap:1.25rem; margin-bottom:2rem; }
+    .post-tag { font-size:0.7rem; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); border:1px solid rgba(201,168,76,0.35); padding:0.25rem 0.8rem; }
+    .post-date { font-size:0.75rem; color:var(--text-light); }
+    .post-hero h1 { font-family:var(--display); font-size:clamp(2.8rem,6vw,5rem); line-height:1; letter-spacing:0.04em; color:var(--white); margin-bottom:2rem; }
+    .post-rule { width:50px; height:2px; background:var(--gold); margin-bottom:2rem; }
+    .post-dek { font-family:var(--serif); font-size:1.1rem; font-style:italic; color:var(--text-mid); line-height:1.85; max-width:680px; border-left:2px solid var(--gold); padding-left:1.5rem; }
+    .post-body { max-width:720px; margin:0 auto; padding:4rem 3rem 6rem; }
+    .post-body p { font-size:1rem; line-height:1.9; color:var(--text-mid); margin-bottom:1.75rem; }
+    .post-body p strong { color:var(--cream); font-weight:500; }
+    .post-body h2 { font-family:var(--display); font-size:1.6rem; letter-spacing:0.06em; color:var(--white); margin:3rem 0 1.25rem; padding-top:0.5rem; border-top:1px solid rgba(201,168,76,0.15); }
+    .post-body blockquote { border-left:3px solid var(--gold); padding:1.25rem 1.75rem; margin:2.5rem 0; background:rgba(201,168,76,0.04); }
+    .post-body blockquote p { font-family:var(--serif); font-size:1.15rem; font-style:italic; color:var(--cream); margin:0; }
+    .data-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5px; background:rgba(201,168,76,0.1); border:1px solid rgba(201,168,76,0.12); margin:2.5rem 0; }
+    .data-cell { background:var(--navy-mid); padding:1.5rem; }
+    .data-cell .num { font-family:var(--display); font-size:2.5rem; color:var(--gold); line-height:1; margin-bottom:0.4rem; }
+    .data-cell p { font-size:0.82rem; color:var(--text-light); line-height:1.5; margin:0; }
+    .data-cell .source { font-size:0.72rem; color:rgba(201,168,76,0.45); text-transform:uppercase; letter-spacing:0.08em; margin-top:0.4rem; }
+    .btn { display:inline-block; font-size:0.78rem; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; color:var(--navy); background:var(--gold); padding:0.85rem 2rem; border-radius:2px; text-decoration:none; transition:background 0.2s; }
+    .btn:hover { background:var(--gold-light); }
+    .post-cta { max-width:720px; margin:0 auto 4rem; padding:2.5rem 3rem; background:var(--navy-mid); border:1px solid rgba(201,168,76,0.2); }
+    .post-cta p { font-size:0.95rem; color:var(--text-light); margin-bottom:1.5rem; }
+    .post-cta p strong { color:var(--cream); }
+    .back-link { display:block; max-width:720px; margin:0 auto 2rem; padding:0 3rem; font-size:0.75rem; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-light); text-decoration:none; transition:color 0.2s; }
+    .back-link:hover { color:var(--gold); }
+    .back-link::before { content:'← '; }
+    footer { background:var(--navy-mid); padding:2.5rem 3rem; border-top:1px solid rgba(201,168,76,0.12); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; }
+    .footer-logo { font-family:var(--display); font-size:1.1rem; letter-spacing:0.12em; color:var(--gold); }
+    .footer-logo span { color:var(--cream); }
+    .footer-copy { font-size:0.75rem; color:var(--text-light); }
+    @media (max-width:768px) { nav { padding:1rem 1.5rem; } .nav-links { display:none; } .post-hero { padding:7rem 1.5rem 3rem; } .post-body { padding:3rem 1.5rem 4rem; } .post-cta { padding:2rem 1.5rem; } .back-link { padding:0 1.5rem; } footer { padding:2rem 1.5rem; flex-direction:column; align-items:flex-start; } .data-grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="nav-logo" href="/">ETG <span>/ Expeditionary Talent Group</span></a>
+    <ul class="nav-links">
+      <li><a href="/#why">About</a></li>
+      <li><a href="/blog.html">From the Field</a></li>
+      <li><a href="/#contact" class="nav-cta">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <header class="post-hero">
+      <div class="post-eyebrow">
+        <span class="post-tag">Candidate Truth</span>
+        <span class="post-date">October 2026</span>
+      </div>
+      <h1>The Hardest Part Is the Intent</h1>
+      <div class="post-rule"></div>
+      <p class="post-dek">An AI agent followed my instructions perfectly, including the one line that broke them. The hardest part of working with AI is not the tool. It is the intent.</p>
+    </header>
+
+    <div class="post-body">
+<p>Every morning an AI agent builds my daily brief. It pulls the accounts, the follow ups due, and the open tasks in my CRM, and puts them in front of me before the day starts.</p>
+<p>For a while I was doing a lot of my work twice. I would ask the agent to mark a task complete, move on, and find the same task still open later. So I closed it by hand. Then I caught another one. The duplicate steps kept stacking up.</p>
+<p>The cause was one line in my own instructions. When I first set up the brief, I wrote that the agent was never allowed to edit the CRM. I meant it as a safety rail, and then I forgot it was there. The agent did not forget. Every time I asked it to close a task, it honored the rule I had written over the request I was making.</p>
+<p>Nothing was broken. The agent followed my orders exactly. My orders were the problem.</p>
+<p>That is the part of working with AI nobody warns you about. The tool is rarely the hard part. The hard part is stating what you actually want: the purpose, the end state, and the limits. And then making sure those pieces do not quietly cancel each other out.</p>
+<p>The military has a name for that skill. It is called intent, and the military spends years teaching it.</p>
+<p>A Marine operations order does not just list tasks. It carries the commander's intent: why the mission matters and what the end state looks like. It also separates two kinds of limits. Constraints are things you must do. Restraints are things you cannot do. Part of writing a good order is checking that no restraint makes a task impossible, because a unit that receives contradictory orders either stalls or picks one and hopes.</p>
+<p>I had written an order with a restraint that blocked the task I kept assigning. Any lieutenant who has had an order sent back for that reason would recognize the mistake immediately.</p>
+<p>But there is an important difference between my agent and a Marine. A good corporal handed my instructions would have stopped and asked, "You told me never to touch the CRM. Do you want these closed anyway?" That question comes from shared context. The corporal knows how the unit runs, how the boss thinks, and when a rule was meant as a guardrail and not a wall.</p>
+<p>An AI has none of that. It does not know which of your instructions you care about and which you wrote in a hurry three weeks ago. It resolves every gap and every conflict with its best reading of what you wrote, and it does so with total confidence.</p>
+<p>That makes intent harder to write for a machine, not easier. Everything a unit's culture used to carry now has to be on the page.</p>
+<p>For operations leaders, this is where the bottleneck has moved. As routine work shifts to automation, the job is less about doing the work and more about defining it well enough for something else to do it. That means a clear purpose, a defined end state, and limits that do not conflict. The people who struggle with AI are rarely struggling with the software. They are finding out they never had to put their intent into words before, because a capable human on the other end filled in the gaps.</p>
+<p>The military trains that skill on purpose. A young officer learns to write intent clearly enough that a team can act on it without calling back, and to understand the mission two levels up well enough to make the call their boss would make.</p>
+<p>Military service does not guarantee the skill, though. Some people came up under commands that micromanaged every move and never practiced writing intent. Others learned it deeply. On paper, both resumes look the same. That is a fit question, and one conversation can answer it.</p>
+<p>Ask a candidate for the intent behind the last major task they led. Not what they did. Why it mattered, what done looked like, and what they would have let their team change without asking. Someone who learned mission command answers in about thirty seconds. Someone who did not will describe the steps.</p>
+<p>My agent did not need better software. It needed a better order.</p>
+    </div>
+
+    <div class="post-cta">
+      <p><strong>If you are trying to figure out what a candidate's military background actually means for the role you are filling,</strong> we would rather spend 20 minutes understanding the situation than send you a stack of resumes that will not work out.</p>
+      <a href="/#contact" class="btn">Start the conversation</a>
+    </div>
+  </article>
+
+  <a href="/blog.html" class="back-link">Back to From the Field</a>
+
+  <footer>
+    <div class="footer-logo">ETG <span>/ Expeditionary Talent Group</span></div>
+    <p class="footer-copy">© 2026 Expeditionary Talent Group. All rights reserved.</p>
+  </footer>
+</body>
+</html>
