@@ -1,6 +1,14 @@
 {
   "posts": [
     {
+      "slug": "the-same-five-resumes",
+      "title": "The Same Five Resumes",
+      "tag": "Candidate Truth",
+      "date": "2026-10-12",
+      "dateLabel": "October 2026",
+      "excerpt": "Why hiring managers running multiple search agencies keep seeing the same five candidates, and what actually separates a keyword search from an honest assessment of military talent."
+    },
+    {
       "slug": "the-hardest-part-is-the-intent",
       "title": "The Hardest Part Is the Intent",
       "tag": "Candidate Truth",
@@ -31,14 +39,6 @@
       "date": "2026-09-29",
       "dateLabel": "September 2026",
       "excerpt": "Industrial lead times trace back to a hiring gap. The plant managers, operations leaders, and quality engineers needed to run 2027 and 2028 capacity are the real constraint, and veteran talent is a direct functional match."
-    },
-    {
-      "slug": "the-same-five-resumes",
-      "title": "The Same Five Resumes",
-      "tag": "Candidate Truth",
-      "date": "2026-09-23",
-      "dateLabel": "September 2026",
-      "excerpt": "Why hiring managers running multiple search agencies keep seeing the same five candidates, and what actually separates a keyword search from an honest assessment of military talent."
     },
     {
       "slug": "calculating-the-cost-of-a-leadership-mismatch",
