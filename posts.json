@@ -1,20 +1,20 @@
 {
   "posts": [
     {
-      "slug": "the-same-five-resumes",
-      "title": "The Same Five Resumes",
-      "tag": "Candidate Truth",
-      "date": "2026-10-12",
-      "dateLabel": "October 2026",
-      "excerpt": "Why hiring managers running multiple search agencies keep seeing the same five candidates, and what actually separates a keyword search from an honest assessment of military talent."
-    },
-    {
       "slug": "the-hardest-part-is-the-intent",
       "title": "The Hardest Part Is the Intent",
       "tag": "Candidate Truth",
       "date": "2026-10-12",
       "dateLabel": "October 2026",
       "excerpt": "Why the hardest part of working with AI is writing clear intent, what Marine Corps commander's intent and mission command teach about it, and a one question interview test for the skill."
+    },
+    {
+      "slug": "the-same-five-resumes",
+      "title": "The Same Five Resumes",
+      "tag": "Candidate Truth",
+      "date": "2026-10-12",
+      "dateLabel": "October 2026",
+      "excerpt": "Why hiring managers running multiple search agencies keep seeing the same five candidates, and what actually separates a keyword search from an honest assessment of military talent."
     },
     {
       "slug": "the-market-stopped-moving",
