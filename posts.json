@@ -1,20 +1,20 @@
 {
   "posts": [
     {
-      "slug": "a-wider-search-will-not-fix-this-one",
-      "title": "A Wider Search Will Not Fix This One",
-      "tag": "Industry POV",
-      "date": "2026-10-12",
-      "dateLabel": "October 2026",
-      "excerpt": "The US labor force contracted by roughly 700,000 workers in 2026, a rare move outside of a recession. Why the same five resumes pattern now has a second, harder cause, and why a wider search does not fix it."
-    },
-    {
       "slug": "the-hardest-part-is-the-intent",
       "title": "The Hardest Part Is the Intent",
       "tag": "Candidate Truth",
       "date": "2026-10-12",
       "dateLabel": "October 2026",
       "excerpt": "Why the hardest part of working with AI is writing clear intent, what Marine Corps commander's intent and mission command teach about it, and a one question interview test for the skill."
+    },
+    {
+      "slug": "a-wider-search-will-not-fix-this-one",
+      "title": "A Wider Search Will Not Fix This One",
+      "tag": "Industry POV",
+      "date": "2026-10-12",
+      "dateLabel": "October 2026",
+      "excerpt": "The US labor force contracted by roughly 700,000 workers in 2026, a rare move outside of a recession. Why the same five resumes pattern now has a second, harder cause, and why a wider search does not fix it."
     },
     {
       "slug": "the-same-five-resumes",
