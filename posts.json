@@ -1,6 +1,14 @@
 {
   "posts": [
     {
+      "slug": "the-hardest-part-is-the-intent",
+      "title": "The Hardest Part Is the Intent",
+      "tag": "Candidate Truth",
+      "date": "2026-10-12",
+      "dateLabel": "October 2026",
+      "excerpt": "Why the hardest part of working with AI is writing clear intent, what Marine Corps commander's intent and mission command teach about it, and a one question interview test for the skill."
+    },
+    {
       "slug": "the-market-stopped-moving",
       "title": "The Market Stopped Moving",
       "tag": "Industry POV",
