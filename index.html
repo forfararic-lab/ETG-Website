@@ -96,6 +96,10 @@
     }
 
     .nav-cta:hover { background: var(--gold-light) !important; color: var(--navy) !important; }
+    .contact-status { margin-top: 1.25rem; padding: 1rem 1.2rem; border-radius: 2px; font-size: 0.88rem; line-height: 1.6; display: none; }
+    .contact-status.success { display: block; background: rgba(201,168,76,0.1); border: 1px solid rgba(201,168,76,0.35); color: var(--gold-light); }
+    .contact-status.error { display: block; background: rgba(217,84,78,0.1); border: 1px solid rgba(217,84,78,0.35); color: #e08a86; }
+    #contact-form button:disabled { opacity: 0.6; cursor: not-allowed; }
 
     .nav-dropdown { position: relative; }
     .nav-dropdown-menu {
@@ -781,17 +785,18 @@
     <h2 class="section-title">Let's Talk</h2>
     <p class="section-intro" style="margin-bottom: 3rem;">Hiring industrial ops talent? Have a veteran you want to place? Looking for market intelligence on labor trends in your sector?</p>
     <div style="max-width: 560px; margin: 0 auto;">
-      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-        <input type="hidden" name="form-name" value="contact" />
-        <p style="display:none;"><input name="bot-field" /></p>
+      <form id="contact-form" novalidate>
+        <p style="display:none;"><input name="bot-field" tabindex="-1" autocomplete="off" /></p>
         <div style="display: grid; gap: 1rem; margin-bottom: 1rem;">
           <input type="text" name="name" placeholder="Your Name" required style="width:100%; padding: 0.9rem 1.2rem; background: var(--navy); border: 1px solid rgba(201,168,76,0.2); color: var(--cream); font-family: var(--sans); font-size: 0.9rem; border-radius: 2px; outline: none;" />
+          <input type="text" name="company" placeholder="Company (optional)" style="width:100%; padding: 0.9rem 1.2rem; background: var(--navy); border: 1px solid rgba(201,168,76,0.2); color: var(--cream); font-family: var(--sans); font-size: 0.9rem; border-radius: 2px; outline: none;" />
           <input type="email" name="email" placeholder="Email Address" required style="width:100%; padding: 0.9rem 1.2rem; background: var(--navy); border: 1px solid rgba(201,168,76,0.2); color: var(--cream); font-family: var(--sans); font-size: 0.9rem; border-radius: 2px; outline: none;" />
           <input type="tel" name="phone" placeholder="Phone Number" style="width:100%; padding: 0.9rem 1.2rem; background: var(--navy); border: 1px solid rgba(201,168,76,0.2); color: var(--cream); font-family: var(--sans); font-size: 0.9rem; border-radius: 2px; outline: none;" />
           <textarea name="message" placeholder="How can we help?" rows="4" required style="width:100%; padding: 0.9rem 1.2rem; background: var(--navy); border: 1px solid rgba(201,168,76,0.2); color: var(--cream); font-family: var(--sans); font-size: 0.9rem; border-radius: 2px; outline: none; resize: vertical;"></textarea>
         </div>
-        <button type="submit" style="width:100%; padding: 1rem; background: var(--gold); color: var(--navy); font-family: var(--sans); font-size: 0.8rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; border: none; border-radius: 2px; cursor: pointer;">Send Message</button>
+        <button type="submit" id="contact-submit" style="width:100%; padding: 1rem; background: var(--gold); color: var(--navy); font-family: var(--sans); font-size: 0.8rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; border: none; border-radius: 2px; cursor: pointer;">Send Message</button>
       </form>
+      <div class="contact-status" id="contact-status"></div>
     </div>
   </section>
 
@@ -807,6 +812,40 @@
     </ul>
     <p class="footer-copy">© 2026 Expeditionary Talent Group. All rights reserved.</p>
   </footer>
+
+  <script>
+    const CONTACT_INTAKE_URL = 'https://ktaocphxrtpmnffquhax.supabase.co/functions/v1/contact-intake';
+
+    const contactForm = document.getElementById('contact-form');
+    const contactStatus = document.getElementById('contact-status');
+    const contactSubmit = document.getElementById('contact-submit');
+
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (contactForm.elements['bot-field'].value) return; // honeypot tripped, silently no-op
+      if (!contactForm.reportValidity()) return;
+
+      contactSubmit.disabled = true;
+      contactSubmit.textContent = 'Sending…';
+      contactStatus.className = 'contact-status';
+      contactStatus.textContent = '';
+
+      try {
+        const res = await fetch(CONTACT_INTAKE_URL, { method: 'POST', body: new FormData(contactForm) });
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok) throw new Error(data.error || 'Something went wrong. Please try again.');
+
+        contactForm.hidden = true;
+        contactStatus.className = 'contact-status success';
+        contactStatus.textContent = "Thanks. Your message is in, and we'll get back to you shortly.";
+      } catch (err) {
+        contactStatus.className = 'contact-status error';
+        contactStatus.textContent = err.message;
+        contactSubmit.disabled = false;
+        contactSubmit.textContent = 'Send Message';
+      }
+    });
+  </script>
 
 </body>
 </html>
