@@ -1,6 +1,14 @@
 {
   "posts": [
     {
+      "slug": "years-of-experience-requirements",
+      "title": "Are We Asking the Right Questions About Experience?",
+      "tag": "Candidate Truth",
+      "date": "2026-10-20",
+      "dateLabel": "October 2026",
+      "excerpt": "Years of experience requirements no longer measure what they used to. How AI and thinning career ladders changed the math, and what to ask instead."
+    },
+    {
       "slug": "the-hardest-part-is-the-intent",
       "title": "The Hardest Part Is the Intent",
       "tag": "Candidate Truth",
