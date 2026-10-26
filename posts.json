@@ -1,6 +1,14 @@
 {
   "posts": [
     {
+      "slug": "uncertainty-rolls-downhill",
+      "title": "Uncertainty Rolls Downhill",
+      "tag": "Industry POV",
+      "date": "2026-10-26",
+      "dateLabel": "October 2026",
+      "excerpt": "Manager engagement fell nine points since 2022 while 42% of organizations cut management roles. Why uncertainty lands in the middle, and what stops it."
+    },
+    {
       "slug": "years-of-experience-requirements",
       "title": "Are We Asking the Right Questions About Experience?",
       "tag": "Candidate Truth",
