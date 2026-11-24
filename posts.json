@@ -1,6 +1,14 @@
 {
   "posts": [
     {
+      "slug": "what-is-underneath-it",
+      "title": "What Is Underneath It",
+      "tag": "Industry POV",
+      "date": "2026-11-24",
+      "dateLabel": "November 2026",
+      "excerpt": "A Microsoft outage in 74 countries and a nationwide FAA ground stop ran the same test. What held was process, procedure, and people underneath the system."
+    },
+    {
       "slug": "what-does-the-seat-need",
       "title": "What Does the Seat Need?",
       "tag": "The Honest Assessment",
